@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded',async()=>{
  if(!usuarioAutenticado()){location.href='login.html';return;}
  try{
   const [c,p,m,s]=await Promise.all([
-   apiRequest('/campanhas'),
-   apiRequest('/recursos/personagens'),
-   apiRequest('/recursos/missoes'),
-   apiRequest('/recursos/sessoes')
+   apiRequest('/api/campanhas'),
+   apiRequest('/api/recursos/personagens'),
+   apiRequest('/api/recursos/missoes'),
+   apiRequest('/api/recursos/sessoes')
   ]);
   const campanhas=c.campanhas||[];
   document.getElementById('totalCampanhas').textContent=campanhas.length;
