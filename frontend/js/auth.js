@@ -6,7 +6,7 @@
 // Realizar login
 async function loginUsuario(email, senha) {
     try {
-        const resposta = await apiRequest('/auth/login', {
+        const resposta = await apiRequest('/api/auth/login', {
             method: 'POST',
             body: JSON.stringify({ email, senha })
         });
@@ -38,7 +38,7 @@ async function loginUsuario(email, senha) {
 // Realizar cadastro
 async function cadastrarUsuario(nome, email, senha) {
     try {
-        const resposta = await apiRequest('/auth/cadastro', {
+        const resposta = await apiRequest('/api/auth/cadastro', {
             method: 'POST',
             body: JSON.stringify({ nome, email, senha })
         });
