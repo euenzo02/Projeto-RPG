@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criar conta | Projeto RPG</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <section class="auth-banner">
+
+            <div class="auth-brand">
+                <div class="auth-logo">R</div>
+                <span class="auth-brand-name">Projeto RPG</span>
+            </div>
+
+            <div class="auth-banner-content">
+                <h1>
+                    Crie seu personagem.
+                    <span>Escreva sua história.</span>
+                </h1>
+
+                <p>
+                    Entre para uma comunidade de aventureiros,
+                    participe de campanhas e viva histórias
+                    que vão muito além da sua imaginação.
+                </p>
+            </div>
+
+            <div class="auth-banner-footer">
+                © 2026 Projeto RPG. Sua aventura, suas regras.
+            </div>
+
+        </section>
+
+        <section class="auth-content">
+
+            <div class="auth-box">
+
+                <h2>Crie sua conta</h2>
+
+                <p class="auth-description">
+                    Preencha seus dados para começar sua aventura.
+                </p>
+
+                <div id="authError" class="auth-error"></div>
+
+                <div id="authSuccess" class="auth-success"></div>
+
+                <form id="cadastroForm" class="auth-form">
+
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            class="form-control"
+                            placeholder="Como devemos chamar você?"
+                            required
+                            minlength="2"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            class="form-control"
+                            placeholder="seu@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            class="form-control"
+                            placeholder="Mínimo de 8 caracteres"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmarSenha">Confirmar senha</label>
+
+                        <input
+                            type="password"
+                            id="confirmarSenha"
+                            class="form-control"
+                            placeholder="Digite sua senha novamente"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+
+                    <button
+                        type="submit"
+                        id="cadastroButton"
+                        class="btn btn-primary btn-block"
+                    >
+                        Criar minha conta
+                    </button>
+
+                </form>
+
+                <div class="auth-link">
+                    Já possui uma conta?
+                    <a href="login.html">Fazer login</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/cadastro.js"></script>
+
+</body>
+</html>

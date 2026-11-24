@@ -1,0 +1,11 @@
+import express from 'express';
+import { autenticar } from '../middleware/autenticar.js';
+import { criarCampanha, listarCampanhas, buscarCampanha, atualizarCampanha, excluirCampanha } from '../controllers/campanhaController.js';
+const router = express.Router();
+router.use(autenticar);
+router.post('/', criarCampanha);
+router.get('/', listarCampanhas);
+router.get('/:id', buscarCampanha);
+router.put('/:id', atualizarCampanha);
+router.delete('/:id', excluirCampanha);
+export default router;

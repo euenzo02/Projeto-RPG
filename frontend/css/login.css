@@ -1,0 +1,200 @@
+
+/* =================================
+   TELA DE AUTENTICAÇÃO
+================================= */
+
+.auth-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--bg-primary);
+}
+
+/* =================================
+   PAINEL VISUAL
+================================= */
+
+.auth-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 55px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 75% 25%, rgba(139, 112, 245, 0.28), transparent 35%),
+        linear-gradient(145deg, #19152d, #0b0d14 75%);
+    border-right: 1px solid var(--border);
+}
+
+.auth-banner::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    right: -100px;
+    bottom: -100px;
+    border: 1px solid rgba(139, 112, 245, 0.2);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 45px rgba(139, 112, 245, 0.04),
+        0 0 0 90px rgba(139, 112, 245, 0.03);
+}
+
+.auth-brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    position: relative;
+    z-index: 1;
+}
+
+.auth-logo {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    background: var(--primary);
+    border-radius: 13px;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.auth-brand-name {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.auth-banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+}
+
+.auth-banner-content h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(35px, 4vw, 55px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.auth-banner-content h1 span {
+    color: var(--primary-hover);
+}
+
+.auth-banner-content p {
+    max-width: 420px;
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.auth-banner-footer {
+    position: relative;
+    z-index: 1;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+/* =================================
+   ÁREA DO FORMULÁRIO
+================================= */
+
+.auth-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 25px;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 420px;
+}
+
+.auth-box h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 29px;
+    margin-bottom: 8px;
+}
+
+.auth-description {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.auth-form {
+    width: 100%;
+}
+
+.auth-form .btn {
+    margin-top: 8px;
+    min-height: 48px;
+}
+
+.auth-link {
+    margin-top: 25px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.auth-link a {
+    color: var(--primary-hover);
+    font-weight: 700;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+.auth-error,
+.auth-success {
+    display: none;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+}
+
+.auth-error {
+    color: var(--danger);
+    background: rgba(239, 100, 117, 0.1);
+}
+
+.auth-success {
+    color: var(--success);
+    background: rgba(69, 197, 138, 0.1);
+}
+
+/* =================================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 850px) {
+    .auth-page {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-banner {
+        display: none;
+    }
+
+    .auth-content {
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-content {
+        padding: 30px 20px;
+    }
+
+    .auth-box h2 {
+        font-size: 25px;
+    }
+}

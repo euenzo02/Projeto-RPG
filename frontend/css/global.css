@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg-primary: #0b0d14;
+    --bg-secondary: #111522;
+    --bg-card: #171c2b;
+    --bg-hover: #20263a;
+
+    --primary: #8b70f5;
+    --primary-hover: #a18cfb;
+    --primary-soft: rgba(139, 112, 245, 0.15);
+
+    --text-primary: #f2f2f8;
+    --text-secondary: #a0a5b8;
+    --text-muted: #686f85;
+
+    --border: rgba(255, 255, 255, 0.08);
+
+    --success: #45c58a;
+    --danger: #ef6475;
+    --warning: #e8b65c;
+
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+
+    --transition: 0.25s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+::selection {
+    background: var(--primary);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #343951;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}

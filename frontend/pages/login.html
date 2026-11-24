@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entrar | Projeto RPG</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <section class="auth-banner">
+
+            <div class="auth-brand">
+                <div class="auth-logo">R</div>
+                <span class="auth-brand-name">Projeto RPG</span>
+            </div>
+
+            <div class="auth-banner-content">
+                <h1>
+                    Sua próxima grande
+                    <span>aventura começa aqui.</span>
+                </h1>
+
+                <p>
+                    Organize campanhas, crie personagens,
+                    gerencie missões e construa histórias
+                    inesquecíveis com seus amigos.
+                </p>
+            </div>
+
+            <div class="auth-banner-footer">
+                © 2026 Projeto RPG. Sua aventura, suas regras.
+            </div>
+
+        </section>
+
+        <section class="auth-content">
+
+            <div class="auth-box">
+
+                <h2>Bem-vindo de volta!</h2>
+
+                <p class="auth-description">
+                    Entre com suas credenciais para continuar.
+                </p>
+
+                <div id="authError" class="auth-error"></div>
+
+                <div id="authSuccess" class="auth-success"></div>
+
+                <form id="loginForm" class="auth-form">
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            class="form-control"
+                            placeholder="seu@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            class="form-control"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+                    </div>
+
+                    <button
+                        type="submit"
+                        id="loginButton"
+                        class="btn btn-primary btn-block"
+                    >
+                        Entrar na minha conta
+                    </button>
+
+                </form>
+
+                <div class="auth-link">
+                    Ainda não possui uma conta?
+                    <a href="cadastro.html">Criar conta</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/login.js"></script>
+
+</body>
+</html>

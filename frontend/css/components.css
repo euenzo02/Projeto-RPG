@@ -1,0 +1,173 @@
+
+/* =================================
+   BOTÕES
+================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 20px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+    border-color: var(--border);
+}
+
+.btn-secondary:hover {
+    background: #292f45;
+}
+
+.btn-danger {
+    background: rgba(239, 100, 117, 0.12);
+    color: var(--danger);
+    border-color: rgba(239, 100, 117, 0.2);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* =================================
+   CAMPOS DE FORMULÁRIO
+================================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 13px 15px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    outline: none;
+    transition: var(--transition);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-soft);
+}
+
+/* =================================
+   CARDS
+================================= */
+
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 22px;
+    transition: var(--transition);
+}
+
+.card-hover:hover {
+    border-color: rgba(139, 112, 245, 0.4);
+    transform: translateY(-3px);
+}
+
+/* =================================
+   BADGES
+================================= */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.badge-success {
+    color: var(--success);
+    background: rgba(69, 197, 138, 0.12);
+}
+
+.badge-warning {
+    color: var(--warning);
+    background: rgba(232, 182, 92, 0.12);
+}
+
+.badge-danger {
+    color: var(--danger);
+    background: rgba(239, 100, 117, 0.12);
+}
+
+.badge-primary {
+    color: var(--primary-hover);
+    background: var(--primary-soft);
+}
+
+/* =================================
+   MENSAGENS
+================================= */
+
+.message {
+    padding: 12px 15px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.message-error {
+    color: var(--danger);
+    background: rgba(239, 100, 117, 0.1);
+    border: 1px solid rgba(239, 100, 117, 0.2);
+}
+
+.message-success {
+    color: var(--success);
+    background: rgba(69, 197, 138, 0.1);
+    border: 1px solid rgba(69, 197, 138, 0.2);
+}
+
+/* =================================
+   ESTADOS
+================================= */
+
+.hidden {
+    display: none !important;
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-center {
+    text-align: center;
+}
